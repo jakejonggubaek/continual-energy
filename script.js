@@ -46,6 +46,11 @@ productsContainer.forEach((container, index)=>{
     container.addEventListener('mouseover', () => {
         productsDetail[index].style.zIndex = '2';
     });
+
+    container.addEventListener('click', () => {
+        productsDetail[index].style.zIndex = '2';
+    });
+
     container.addEventListener('mouseleave', () => {
         productsDetail[index].style.zIndex = '-1';
     });
