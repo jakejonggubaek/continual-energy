@@ -5,13 +5,13 @@
 }
 
 @mixin tabletMQ {
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     @content;
   }
 }
 
 @mixin mobileMQ {
-  @media (max-width: 600px) {
+  @media (max-width: 765px) {
     @content;
   }
 }

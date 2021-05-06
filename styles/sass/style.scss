@@ -27,6 +27,10 @@ h1 {
     margin-top: 50px;
     margin-bottom: 0;
     border-bottom: 3px solid #7dbc41;
+
+    @include mobileMQ {
+        font-size: 2rem;
+    }
 }
 
 h2 {
@@ -65,6 +69,11 @@ header {
 
         .logo {
             width: 200px;
+
+            @include mobileMQ {
+                margin-top: 50px;
+            }
+
             img {
                 width: 100%;
             }
@@ -83,25 +92,55 @@ header {
         nav {
             display: flex; 
             justify-content: center;
-            width: calc(80% - 200px);
+            width: calc(81% - 200px);
+
+            @include tabletMQ {
+                width: calc(90% - 200px);
+            }
+
+            @include mobileMQ {
+                display: none;
+            }
 
             ul {
                 display: flex; 
                 font-family: 'Rubik', sans-serif;
                 font-size: 2rem;
 
+                @include tabletMQ {
+                    font-size: 1.75rem;
+                    padding: 0;
+                }
+
                 li {
                     padding: 20px;
+
+                    @include tabletMQ {
+                        padding: 10px;
+                    }
                 }
             }
         }
 
         .social_media {
             position: relative;
-            width: 20%;
+            width: 21%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include tabletMQ {
+                position: absolute;
+                top: 150px;
+                width: 30%;
+            }
+
+            @include mobileMQ {
+                position: absolute;
+                top: 20px;
+                justify-content: flex-end;
+                width: 90%;
+            }
 
             i {
                 font-size: 2.5rem;
@@ -111,6 +150,7 @@ header {
             button {
                 position: absolute;
                 right: 0;
+                width: 65px;
                 font-size: 1.5rem;
                 background-color: #7dbc41;
                 color: white;
@@ -118,12 +158,77 @@ header {
                 margin-left: 10px;
                 padding: 5px;
                 border-radius: 3px;
+                @include tabletMQ {
+                    position: relative;
+                }   
             }
 
             button:hover, button:focus {
                 cursor: pointer;
                 opacity: 0.7;
             }
+            
+        }
+
+        .login-form {
+            visibility: hidden;
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            width: 300px;
+            background-color: #f9f9f9;
+            border: 2px solid #7dbc41;
+            border-radius: 10px;
+            padding: 20px;
+
+            @include tabletMQ {
+                left: 220px;
+            }
+
+            @include mobileMQ {
+                left:auto;
+                right: 10px;
+            }
+
+            input {
+                width: 100%;
+                height: 30px;
+                margin: 5px 0;
+            }
+
+            .close-button {
+                position: absolute;
+                font-size: 2rem;
+                top: 10px;
+                right: 10px;
+
+                &:hover, &:focus {
+                    cursor: pointer;
+                    opacity: 0.5;
+                    transform: scale(1.2);
+                }
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    width: 48%;
+                    height: 40px;
+                    background-color: #7dbc41;
+                    color: white;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 1.5rem;
+
+                    &:hover, &:focus {
+                        cursor: pointer;
+                        opacity: 0.5;
+                    }
+                }
+            }
+
             
         }
     }
@@ -169,24 +274,50 @@ section {
         width: 100%;
         height: 80%;
 
+        @include tabletMQ {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .image-container {
             position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 22%;
             height: auto;
             border-radius: 5px;
 
+            @include tabletMQ {
+                width: 45%;
+            }
+
             img {
                 width: 100%;
+
+                @include tabletMQ {
+                    width: 45%;
+                }
             }
             p {
                 text-align: center;
+
+                @include tabletMQ {
+                    font-size: 1.5rem;
+                }
+    
             }
         }
 
         .image-container:hover, .image-container:focus {
             cursor: pointer;
             background-color: #7dbc41;
-            border: 3px solid #7dbc41
+            border: 3px solid #7dbc41;
+
+            @include tabletMQ {
+                background-color: white;
+            }
         }
         .value-content {
             background-color: #7dbc41;
@@ -227,11 +358,27 @@ section {
         justify-content: space-around;
         align-items: center;
 
+        @include mobileMQ {
+            flex-direction: column;
+        }
+
         .image-container {
             width: 30%;
-            height: 350px;
+            height: calc(90vw * 0.3);
             background-color: white;
             border-radius: 5px;
+
+            @include tabletMQ {
+                height: calc(90vw * 0.3 + 50px);
+            }
+
+            @include mobileMQ {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 90%;
+                height: 25%;
+            }
 
             &:hover, &:focus {
                 cursor: pointer;
@@ -243,17 +390,53 @@ section {
                 height: calc(100% - 100px);
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
+
+                @include tabletMQ {
+                    height: calc(100% -110px);
+                }
+
+                @include mobileMQ {
+                   width: auto;
+                   height: 80%;
+                   border-radius: 5px;
+                   margin-left: 10px;
+                }
+            }
+
+            h3 {
+                @include tabletMQ {
+                    margin-bottom: 0;
+                }
+
+                @include tabletMQ {
+                    margin: 0;
+                }
+            }
+
+            p {
+                @include tabletMQ {
+                    margin-top: 5px;
+                }
             }
 
             .products-content {
                 height: 100px;
                 padding: 0 10px;
+
+                @include mobileMQ {
+                    width: 70%;
+                }
             }
         }
     }
 }
 
 .services {
+
+    @include tabletMQ {
+        height:calc(100vh + 400px) ;
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -268,6 +451,11 @@ section {
         flex-wrap: wrap;
         height: 80%;
 
+        @include tabletMQ {
+            flex-direction: column;
+            flex-wrap:nowrap;
+        }
+
         .service-container {
             display: flex;
             justify-content: space-between;
@@ -280,6 +468,11 @@ section {
             border-radius: 10px;
             color: gray;
 
+            @include tabletMQ {
+                width: 90%;
+                height: 23%;
+            }
+            
             &:hover, &:focus {
                 border: 2px solid #7dbc41;
             }
@@ -287,15 +480,30 @@ section {
             img {
                 width: 30%;
                 border-radius: 5px;
+
+                @include tabletMQ {
+                    height: 90%;
+                }
+
+                @include mobileMQ {
+                    height: 50%;
+                }
             }
 
             .service-detail {
                 width: calc(70% - 50px);
                 padding: 10px;
+
+                p {
+                    @include mobileMQ {
+                        display: none;
+                    }
+                }
             }
 
             h3 {
                 margin-bottom: 0;
+                text-align: center;
             }
 
             p {
@@ -318,11 +526,21 @@ section {
                 }
             }
         }
+
+        .reverse {
+            @include tabletMQ {
+                flex-direction: row-reverse;
+            }
+        }
     }
 }
 
 .projects {
     background-color: #333333;
+
+    @include mobileMQ {
+        height: 140vh;
+    }
 
     h1, p {
         color: white;
@@ -330,6 +548,10 @@ section {
 
     .contact-us {
         text-align: end;
+
+        @include mobileMQ {
+            font-size: 1.25rem;
+        }
     }
 
     .projects-contents {
@@ -338,12 +560,21 @@ section {
         align-items: center;
         height: 75%;
 
+        @include mobileMQ {
+            flex-direction: column;
+        }
+
         h3, p {
             color: #333333;
+            text-align: center;
         }
 
         h3 {
             text-align: center;
+
+            @include tabletMQ {
+                font-size: 1.75rem;
+            }
         }
 
         .project-detail {
@@ -357,12 +588,36 @@ section {
             border-radius: 10px;
             padding: 10px;
 
+            &:hover ,&:focus {
+                border: 2px solid #7dbc41;
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
             @include lapTopMQ {
                 height: 100%;
             }
 
+            @include tabletMQ {
+                justify-content: space-around;
+                height: 95%;
+                padding: 5px;
+            }
+
+            @include mobileMQ {
+                width: 90%;
+                height: 23%;
+                flex-direction: row;
+            }
+
             h3, p {
                 margin-bottom: 0;
+            }
+
+            h3 {
+                @include mobileMQ {
+                    font-size: 1.5rem;
+                }
             }
 
             p {
@@ -372,6 +627,12 @@ section {
                 @include lapTopMQ {
                     margin-top: 5px;
                     font-size: 1.5rem;
+                }
+
+                @include mobileMQ {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1.25rem;
                 }
             }
 
@@ -384,10 +645,21 @@ section {
                     height: calc(18vw * 0.9 - 10px);
                 }
 
+                @include mobileMQ {
+                    width: 100px;
+                    height: 100px;
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
                     border-radius: 5px;
+                }
+            }
+
+            .project-desc {
+                @include mobileMQ {
+                    width: 70%;
                 }
             }
 
@@ -400,9 +672,14 @@ section {
                 border-radius: 5px;
                 font-size: 3.5rem;
                 color: #7dbc41;
+
                 &:hover ,&:focus {
                     cursor: pointer;
                     opacity: 0.7;
+                }
+
+                @include mobileMQ {
+                    display: none;
                 }
             }
         }
@@ -422,22 +699,35 @@ section {
         h2 {
             text-align: center;
             margin-top: 50px;
+            @include mobileMQ {
+                margin-top: 30px;
+            }
         }
 
         p {
            @include lapTopMQ {
                 margin-top: 5px;
             } 
+
+            @include tabletMQ {
+                font-size: 1.5rem;
+            }
         }
 
         .profile-container {
             height: 70%;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
 
             @include lapTopMQ {
                 height: 100%;
+            }
+
+            @include mobileMQ {
+                width: 100%;
+                height: 90%;
+                flex-direction: column;
             }
         }
 
@@ -452,8 +742,26 @@ section {
             border-radius: 10px;
             padding: 10px;
 
+            @include mobileMQ {
+                flex-direction: row;
+                width: 95%;
+                margin-top: 20px;
+
+                &:hover, &:focus {
+                    border: 2px solid #7dbc41;
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+
             h3, p {
                 margin-bottom: 0;
+            }
+
+            .profile-desc {
+                @include mobileMQ {
+                    display: none;
+                }
             }
 
             .image-container {
@@ -462,6 +770,11 @@ section {
 
                 @include lapTopMQ {
                     height: calc(90vw * 0.23 - 20px);
+                }
+
+                @include mobileMQ {
+                    width: 75px;
+                    height: 75px;
                 }
 
                 img {
@@ -498,7 +811,16 @@ section {
     @include lapTopMQ {
         height: calc(100vh - 150px);
     }
-    
+
+    @include mobileMQ {
+        height: 130vh;
+    }
+
+    p {
+        @include tabletMQ {
+            font-size: 1.5rem;
+        }
+    }
     
     .info-header {
         display: flex;
@@ -507,6 +829,11 @@ section {
 
         @include lapTopMQ {
             margin-top: 20px;
+        }
+
+        @include mobileMQ {
+            margin-top: 20px;
+
         }
     }
 
@@ -520,8 +847,17 @@ section {
             margin-top: 5px;
         }
 
+        @include mobileMQ {
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
         .info-container {
             width: 30%;
+
+            @include mobileMQ {
+                width: 100%;
+            }
 
             h3 {
                 padding: 5px 0;

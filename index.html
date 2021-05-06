@@ -37,7 +37,28 @@
                 <a href=""><i class="fab fa-linkedin"></i></a>
                 <a href=""><i class="fab fa-youtube-square"></i></a>
                 <a href="https://twitter.com/continualNet"><i class="fab fa-twitter-square"></i></a>
-                <button>LOG IN</button>
+                <button class="login-form-open">LOG IN</button>
+            </div>
+            <div class="login-form">
+                <div class="close-button"><i class="fas fa-times"></i></div>
+                <h3>Login</h3>
+                <p>
+                    Sales partners and employees, enter your credentials here to access Continual's sales and engineering tools.
+                </p>
+                <form action="">
+                    <div>
+                        <label for="name" class="sr-only"></label>
+                        <input type="text" id="name" name="name" placeholder="username">
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only"></label>
+                        <input type="text" id="password" name="password" placeholder="password">
+                    </div>
+                    <div class="button-container">
+                        <button>Request Access</button>
+                        <button>Log In</button>
+                    </div>
+                </form>
             </div>
         </div>
     </header>
@@ -130,7 +151,6 @@
                             <p>Developed by Continual, Powered by DGLogik</p>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -139,7 +159,7 @@
                 <h1>Services</h1>
                 <p>Expertise that identifies and solves critical building challenges.</p>
                 <div class="service-contents">
-                    <div class="service-container left">
+                    <div class="service-container">
                         <img src="./assets/engineering.png" alt="engineering image">
                         <div class="service-detail">
                             <h3>Energy Performance, Modeling, and Lifecycle Cost Analysis</h3>
@@ -149,7 +169,7 @@
                         </div>
                         <button><i class="fas fa-plus-square"></i></button>
                     </div>
-                    <div class="service-container right">
+                    <div class="service-container reverse">
                         <img src="./assets/performance.png" alt="engineering image">
                         <div class="service-detail">
                             <h3>Energy Efficiency Agreements, Financing, and Performance Guarantees</h3>
@@ -159,7 +179,7 @@
                         </div>
                         <button><i class="fas fa-plus-square"></i></button>
                     </div>
-                    <div class="service-container left">
+                    <div class="service-container reverse">
                         <button><i class="fas fa-plus-square"></i></button>
                         <div class="service-detail">
                             <h3>Training</h3>
@@ -172,7 +192,7 @@
                         </div>
                         <img src="./assets/training.png" alt="engineering image">
                     </div>
-                    <div class="service-container right">
+                    <div class="service-container">
                         <button><i class="fas fa-plus-square"></i></button>
                         <div class="service-detail">
                             <h3>Support Services</h3>
@@ -195,56 +215,68 @@
                         <div class="image-container">
                             <img src="./assets/scotiaPlaza.png" alt="view of Scotia Plaza">
                         </div>
-                        <h3>
-                            Multitenant Commercial Highrise
-                        </h3>
-                        <p>Toronto, ON</p>
-                        <br/>
-                        <p>
-                            Energy performance, modeling, and lifecycle cost analysis and Exhaustive Search Optimization Program (ExSOP) for this multi-tenanted commercial office complex.
-                        </p>
+                        <div class="project-desc">
+                            <h3>
+                                Multitenant Commercial Highrise
+                            </h3>
+                            <p>Toronto, ON</p>
+                            <br />
+                            <p>
+                                Energy performance, modeling, and lifecycle cost analysis and Exhaustive Search Optimization Program (ExSOP) for
+                                this multi-tenanted commercial office complex.
+                            </p>
+                        </div>
+                        
                         <button><i class="fas fa-plus-square"></i></button>
                     </div>
                     <div class="project-detail">
                         <div class="image-container">
                             <img src="./assets/olympia.png" alt="view of Olympia building">
                         </div>
-                        <h3>
-                            State Government Campus
-                        </h3>
-                        <p>Olympia, WA</p>
-                        <br />
-                        <p>
-                            Providing Exhaustive Search Optimization Program (ExSOP) for this state government campus.
-                        </p>
+                        <div class="project-desc">
+                            <h3>
+                                State Government Campus
+                            </h3>
+                            <p>Olympia, WA</p>
+                            <br />
+                            <p>
+                                Providing Exhaustive Search Optimization Program (ExSOP) for this state government campus.
+                            </p>
+                        </div>
+                        
                         <button><i class="fas fa-plus-square"></i></button>
                     </div>
                     <div class="project-detail">
                         <div class="image-container">
                             <img src="./assets/roybal.png" alt="view of toybal building">
                         </div>
-                        <h3>
-                            Federal Facilities
-                        </h3>
-                        <p>Los Angeles, CA</p>
-                        <br />
-                        <p>
-                            Exhaustive Search Optimization Program (ExSOP) was implemented for these neighboring federal facilities.
-                        </p>
+                        <div class="project-desc">
+                            <h3>
+                                Federal Facilities
+                            </h3>
+                            <p>Los Angeles, CA</p>
+                            <br />
+                            <p>
+                                Exhaustive Search Optimization Program (ExSOP) was implemented for these neighboring federal facilities.
+                            </p>
+                        </div>
                         <button><i class="fas fa-plus-square"></i></button>
                     </div>
                     <div class="project-detail">
                         <div class="image-container">
                             <img src="./assets/grosvenor.png" alt="photo of Provincial Facility">
                         </div>
-                        <h3>
-                            Provincial Facility
-                        </h3>
-                        <p>Toronto, ON</p>
-                        <br />
-                        <p>
-                            Providing Exhaustive Search Optimization Program (ExSOP) for this provincial office facility.
-                        </p>
+                        <div class="project-desc">
+                            <h3>
+                                Provincial Facility
+                            </h3>
+                            <p>Toronto, ON</p>
+                            <br />
+                            <p>
+                                Providing Exhaustive Search Optimization Program (ExSOP) for this provincial office facility.
+                            </p>
+                        </div>
+                        
                         <button><i class="fas fa-plus-square"></i></button>
                     </div>
                 </div>
@@ -262,56 +294,70 @@
                             <div class="image-container">
                                 <img src="./assets/philipKennedy.png" alt="profile photo of philip Kennedy">
                             </div>
-                            <h3>
-                                Philip Kennedy
-                            </h3>
-                            <p>Principal, Toronto</p>
-                            <br />
-                            <p>
-                                Philip is an international and industry proven innovator and leader of HVAC design and system optimization. He has over 20 years of experience in central plant optimization and design, industr...
-                            </p>
+                            <div>
+                                <h3>
+                                    Philip Kennedy
+                                </h3>
+                                <p>Principal, Toronto</p>
+                                <br />
+                                <p class="profile-desc">
+                                    Philip is an international and industry proven innovator and leader of HVAC design and system optimization. He has
+                                    over 20 years of experience in central plant optimization and design, industr...
+                                </p>
+                            </div>
+                            
                             <button><i class="fas fa-plus-square"></i></button>
                         </div>
                         <div class="profile-detail">
                             <div class="image-container">
                                 <img src="./assets/jasonZwicker.png" alt="profile photo of Jason Zwicker">
                             </div>
-                            <h3>
-                                Jason Zwicker
-                            </h3>
-                            <p>Principal, Toronto</p>
-                            <br />
-                            <p>
-                                Jason is responsible for Continual Energy Inc.'s technology design, development, and implementations including both hardware and software. With over 13 years tenure in the Building Automation indus...
-                            </p>
+                            <div>
+                                <h3>
+                                    Jason Zwicker
+                                </h3>
+                                <p>Principal, Toronto</p>
+                                <br />
+                                <p class="profile-desc">
+                                    Jason is responsible for Continual Energy Inc.'s technology design, development, and implementations including both
+                                    hardware and software. With over 13 years tenure in the Building Automation indus...
+                                </p>
+                            </div>
+                            
                             <button><i class="fas fa-plus-square"></i></button>
                         </div>
                         <div class="profile-detail">
                             <div class="image-container">
                                 <img src="./assets/joshuaKahan.png" alt="profile photo of Joshua Kahan">
                             </div>
-                            <h3>
-                                Joshua Kahan
-                            </h3>
-                            <p>Principal, Montreal</p>
-                            <br />
-                            <p>
-                                A noted leader and author in the sustainability field, Josh possesses a multi-disciplinary expertise in the field of energy efficiency finance, energy project and green building development and sustaina...
-                            </p>
+                            <div>
+                                <h3>
+                                    Joshua Kahan
+                                </h3>
+                                <p>Principal, Montreal</p>
+                                <br />
+                                <p class="profile-desc">
+                                    A noted leader and author in the sustainability field, Josh possesses a multi-disciplinary expertise in the field of
+                                    energy efficiency finance, energy project and green building development and sustaina...
+                                </p>
+                            </div>
                             <button><i class="fas fa-plus-square"></i></button>
                         </div>
                         <div class="profile-detail">
                             <div class="image-container">
                                 <img src="./assets/alexLee.png" alt="profile photo of Alex Lee">
                             </div>
-                            <h3>
-                                Dr. Alex Lee
-                            </h3>
-                            <p>Sales, South-East Asia</p>
-                            <br />
-                            <p>
-                                Dr. Alex Lee is located in Singapore and is Continual's acting sales representative for all of South-East Asia. Armed with 20+ years of R&D expertise and experiences in computational modelling and...
-                            </p>
+                            <div>
+                                <h3>
+                                    Dr. Alex Lee
+                                </h3>
+                                <p>Sales, South-East Asia</p>
+                                <br />
+                                <p class="profile-desc">
+                                    Dr. Alex Lee is located in Singapore and is Continual's acting sales representative for all of South-East Asia.
+                                    Armed with 20+ years of R&D expertise and experiences in computational modelling and...
+                                </p>
+                            </div>
                             <button><i class="fas fa-plus-square"></i></button>
                         </div>
                     </div>
