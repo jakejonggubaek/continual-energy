@@ -17,7 +17,30 @@
     <link rel="stylesheet" href="./styles/sass/style.css">
 </head>
 <body>
+    <button class="top-button" title="Go to top">Top</button>
     <header>
+        <div class="mobile-menu">
+            <div class="burger"><i class="fas fa-bars"></i></div>
+            <nav class="mobile-nav">
+                <ul>
+                    <a href="#about">
+                        <li>Value</li>
+                    </a>
+                    <a href="#products">
+                        <li>Product</li>
+                    </a>
+                    <a href="#services">
+                        <li>Service</li>
+                    </a>
+                    <a href="#projects">
+                        <li>Project</li>
+                    </a>
+                    <a href="#company">
+                        <li>About Us</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
         <div class="wrapper">
             <div class="logo">
                 <img src="./assets/logo.png" alt="continual energy logo">
@@ -130,25 +153,45 @@
             <div class="wrapper">
                 <h1>Products</h1>
                 <div class="products-container">
-                    <div class="image-container">
+                    <div class="image-container products-content-container">
                         <img class="product-image" src="./assets/product1.png" alt="ExSOP image">
                         <div class="products-content">
                             <h3>ExSOP</h3>
                             <p>Exhaustive Search Optimization Program</p>     
                         </div>
+                        <div class="products-content-detail">
+                            <h3>ExSOP</h3>
+                            <p>Exhaustive Search Optimization Program</p>
+                            <p>Providing optimal HVAC system performance and control through the use of an exhaustive search algorithm, identifying the combination of setpoints, equipment sequences and conditioned-space parameters that result in the lowest energy input
+                            and/or lowest instantaneous cost of production.</p>
+                            <p>Click the button to view the brochure, or view the ExSOP White Paper for more in depth information.</p>
+                            <button class="products-content-detail-button"><i class="fas fa-plus-square"></i></button>
+                        </div>
                     </div>
-                    <div class="image-container">
+                    <div class="image-container products-content-container">
                         <img class="product-image" src="./assets/product2.png" alt="MBCx image">
                         <div class="products-content">
                             <h3>MBCx</h3>
                             <p>Monitoring-Based Commissioning</p>
                         </div>
+                        <div class="products-content-detail">
+                            <h3>MBCx</h3>
+                            <p>Monitoring-Based Commissioning</p>
+                            <p>Proactively discover the missing pieces that impact building operations. Enabling the continual identification of preventative measures to ensure and sustain peak building performance.</p>
+                            <button class="products-content-detail-button"><i class="fas fa-plus-square"></i></button>
+                        </div>
                     </div>
-                    <div class="image-container">
+                    <div class="image-container products-content-container">
                         <img class="product-image" src="./assets/product3.png" alt="Continual Box image">
                         <div class="products-content">
                             <h3>Continual Box</h3>
                             <p>Developed by Continual, Powered by DGLogik</p>
+                        </div>
+                        <div class="products-content-detail">
+                            <h3>Continual Box</h3>
+                            <p>Developed by Continual, Powered by DGLogik</p>
+                            <p>A high-performance alternative to its predecessor, the award-winning DGBox, the Continual Box comes bundled with over 50 integration protocols and the DGLux5 visualization platform from DGLogik. The Continual Box contains all the same great software features as the original DGBox, but adds more processing power, additional I/O, upgradable hardware options, and a more robust and reliable hardware platform. Now available, contact us for pricing and training information.</p>
+                            <button class="products-content-detail-button"><i class="fas fa-plus-square"></i></button>
                         </div>
                     </div>
                 </div>
@@ -167,7 +210,7 @@
                                 Developing detailed studies that account for financial and operational needs. Looking beyond initial project phases for favorable reinvestment of savings for continual improvement.
                             </p>
                         </div>
-                        <button><i class="fas fa-plus-square"></i></button>
+                        <button  class="service-detail-link"><i class="fas fa-plus-square"></i></button>
                     </div>
                     <div class="service-container reverse">
                         <img src="./assets/performance.png" alt="engineering image">
@@ -177,10 +220,10 @@
                                 Providing an array of energy performance services aimed at satisfying stakeholder needs. Maximizing a facility's long-term asset value through sustained and predictable energy and cost savings.
                             </p>
                         </div>
-                        <button><i class="fas fa-plus-square"></i></button>
+                        <button  class="service-detail-link"><i class="fas fa-plus-square"></i></button>
                     </div>
                     <div class="service-container reverse">
-                        <button><i class="fas fa-plus-square"></i></button>
+                        <button  class="service-detail-link"><i class="fas fa-plus-square"></i></button>
                         <div class="service-detail">
                             <h3>Training</h3>
                             <p>
@@ -193,7 +236,7 @@
                         <img src="./assets/training.png" alt="engineering image">
                     </div>
                     <div class="service-container">
-                        <button><i class="fas fa-plus-square"></i></button>
+                        <button  class="service-detail-link"><i class="fas fa-plus-square"></i></button>
                         <div class="service-detail">
                             <h3>Support Services</h3>
                             <p>1-800-610-4109</p>
@@ -305,8 +348,7 @@
                                     over 20 years of experience in central plant optimization and design, industr...
                                 </p>
                             </div>
-                            
-                            <button><i class="fas fa-plus-square"></i></button>
+                            <button class="profile-open-button"><i class="fas fa-plus-square"></i></button>
                         </div>
                         <div class="profile-detail">
                             <div class="image-container">
@@ -324,7 +366,7 @@
                                 </p>
                             </div>
                             
-                            <button><i class="fas fa-plus-square"></i></button>
+                            <button class="profile-open-button"><i class="fas fa-plus-square"></i></button>
                         </div>
                         <div class="profile-detail">
                             <div class="image-container">
@@ -341,7 +383,7 @@
                                     energy efficiency finance, energy project and green building development and sustaina...
                                 </p>
                             </div>
-                            <button><i class="fas fa-plus-square"></i></button>
+                            <button class="profile-open-button"><i class="fas fa-plus-square"></i></button>
                         </div>
                         <div class="profile-detail">
                             <div class="image-container">
@@ -358,7 +400,121 @@
                                     Armed with 20+ years of R&D expertise and experiences in computational modelling and...
                                 </p>
                             </div>
-                            <button><i class="fas fa-plus-square"></i></button>
+                            <button class="profile-open-button"><i class="fas fa-plus-square"></i></button>
+                        </div>
+                        <div class="profile-detail-desc">
+                            <h2>Philip Kennedy</h2>
+                            <div>
+                                <img src="./assets/philipKennedy.png" alt="profile photo of philip Kennedy">
+                                <p>
+                                    Philip is an international and industry proven innovator and leader of HVAC design and system optimization. He has
+                                    over
+                                    20 years of experience in central plant optimization and design, industrial automation, measurement and
+                                    verification,
+                                    variable speed centrifugal compressor and large capacity chiller development and implementation.
+                                </p>
+                                <p>
+                                    Philip's past success stories include the development of award winning central plant optimization platforms, the
+                                    deployment of over 100 central plant optimization projects around the world, development of several innovative
+                                    centrifugal chiller designs and controls currently utilized by major manufacturers, AHRI approved chiller
+                                    performance test labs across North America and held a lead role in the development of the revolutionary Turbocor
+                                    magnetic bearing variable speed compressor.
+                                </p>
+                                <p>
+                                    Philip has a deep interest in energy product development, thermal energy modeling, energy performance simulation
+                                    technologies and software development. He is active with several ASHRAE Society committees on energy efficiency.
+                                </p>
+                                <p>
+                                    Philip studied HVAC engineering at Box Hill Institute in Australia where he gained several national and industry
+                                    awards and also studied engineering at Royal Melbourne Institute of Technology.
+                                </p>
+                            </div>
+                            <button class="profile-close">Close</button>
+                        </div>
+                        <div class="profile-detail-desc">
+                            <h2>Jason Zwicker</h2>
+                            <div>
+                                <img src="./assets/jasonZwicker.png" alt="profile photo of Jason Zwicker">
+                                <p>
+                                    As Chief Technology Officer, Jason is responsible for Continual Energy Inc.'s technology design, development, and implementations including both hardware and software. During his 13+ year tenure in the Building Automation System (BAS) and Direct Digital Controls (DDC) industry, the demand for integration of new and existing technologies has provided Jason with a comprehensive knowledge of hardware, software, and systems infrastructure. He has provided automation andenergy solutions for many projects in various markets including school boards and educational facilities, commercial office buildings, government, and large-retail enterprises.
+                                </p>
+                                <h3>Areas of Expertise</h3>
+                                <ul>
+                                    <li>Building Automation and IntegrationAreas of Expertise</li>
+                                    <li>Energy Reporting and Analysis ToolsAreas of Expertise</li>
+                                    <li>Web-Based DevelopmentAreas of Expertise</li>
+                                    <li>Windows Application and Service DevelopmentAreas of Expertise</li>
+                                    <li>Database SystemsAreas of Expertise</li>
+                                    <li>Design and Graphical User InterfacesAreas of Expertise</li>
+                                </ul>
+                                <h3>Education & Certifications</h3>
+                                <ul>
+                                    <li>Education & Certifications</li>
+                                    <li>Niagara 4 Certification, Tridium, 2016</li>
+                                    <li>Certified Energy Manager (CEM), CIET/AEE, 2015</li>
+                                    <li>ASHRAE HVAC Design Level I, ASHRAE, 2014</li>
+                                    <li>iOS Development Certification, New Toronto Group, 2010</li>
+                                    <li>Niagara AX Certification, Tridium, 2009</li>
+                                    <li>Adobe Flash CS4 Certification, New Toronto Group, 2009</li>
+                                    <li>Niagara R2 Certification, Tridium, 2003</li>
+                                    <li>Electronics Engineering Technologist Diploma, RCC, 2002</li>
+                                </ul>
+                            </div>
+                            <button class="profile-close">Close</button>
+                        </div>
+                        <div class="profile-detail-desc">
+                            <h2>Joshua Kahan</h2>
+                            <div>
+                                <img src="./assets/joshuaKahan.png" alt="profile photo of Joshua Kahan">
+                                <p>
+                                    A noted leader and author in the sustainability field, Josh possesses a multi-disciplinary expertise in the field of energy efficiency finance, energy project and green building development and sustainable development.
+                                </p>
+                                <p>
+                                    Josh's past experience includes general management of a central plant optimization provider; co-founding a regional energy services company serving Pennsylvania, New Jersey and Maryland and founding a sustainability solutions company.
+                                </p>
+                                <p>
+                                    He has over 14 years' experience in providing alternative energy and energy efficient project development and deployment, federal, state and utility rebates, grants, tax credits and Renewable Energy Credits facilitation,competitive energy procurement, energy project financing, green building concept design, construction, commissioning and LEED certification, corporate sustainability benchmarking, program and metric development, greenhouse gas assessment and footprint analysis and ecosystem services land use policy and framework development.
+                                </p>
+                                <p>
+                                    Josh holds a Masters of Environmental Studies and Policy from the University of Pennsylvania and a Bachelor of Arts in Law and Society from The American University. Joshua is a LEED Accredited Professional, has published numerous  and in 2009 Joshua was awarded The Green Building of America Award for a LEED project.
+                                </p>
+                            </div>
+                            <button class="profile-close">Close</button>
+                        </div>
+                        <div class="profile-detail-desc">
+                            <h2>Dr. Alex Lee</h2>
+                            <div>
+                                <img src="./assets/alexLee.png" alt="profile photo of Dr. Alex Lee">
+                                <p>
+                                    Armed with 20+ years of R&D expertise and experiences in computational modelling and simulation. Have held both managerial and engineering positions in esteemed research organizations such as Singapore Technologies Aerospace, DSO National Lab, Institute of High Performance Computing (A*STAR) and International Centre for Numerical Method in Engineering (Singapore).
+                                </p>
+                                <h3>Key Competencies</h3>
+                                <ul>
+                                    <li>Strong R&D Background, specifically in fluid/structure interaction</li>
+                                    <li>Computational Fluid Dynamics (CFD), Computational Structural Dynamics (CSD) and development of computational tools</li>
+                                    <li>Excellent project and people management leadership and team building skill set Has worked and lived in US, Taiwan and Singapore</li>
+                                    <li>High level of communication and presentation skills</li>
+                                    <li>Proven experience of mapping engineering simulation solutions to industry and ability to build long term customer relationship</li>
+                                    <li>Global and regional functions across US, Taiwan, China, Europe and APAC regions</li>
+                                </ul>
+                                <h3>Industries</h3>
+                                <ul>
+                                    <li>Green Mark Assessment for Buildings (Natural Ventilation, Heating, Ventilating, and Air-Conditioning HVAC analysis/Fire, Smoke Movement)</li>
+                                    <li>Homeland Security ( Urban scale Contaminant Dispersion analysis / Blast (Explosion) simulation in Urban Environment)</li>
+                                    <li>Health Care ( Cardiovascular / Aneurysm / Inhaler / blood pump / cardiovascular flow)</li>
+                                    <li>Oil and Gas ( Wave impact on offshore platform / VIM / VIV of risers)</li>
+                                    <li>Marine (Resistance analysis / Manoeuvering and Seakeeping / Propulsion Analysis / Wave impact / Air Gap / Sloshing)</li>
+                                    <li>Wind Energy ( Blade-Wake interaction / Wind Farm layout / Fluid-Structure interactions)</li>
+                                    <li>Aerospace ( Pilot Ejection / Store Separation / Blade-wake interaction / Drag Reduction)</li>
+                                    <li>Sport ( Golf ball / Racing Car / Racing Bike / Swimming Racing System)</li>
+                                </ul>
+                                <h3>Job Scope</h3>
+                                <p>
+                                    Executive member for strategic planning, managing R&D Centre, product and project management, presales and technical
+                                    support.
+                                </p>
+                            </div>
+                            <button class="profile-close">Close</button>
                         </div>
                     </div>
                 </div>
