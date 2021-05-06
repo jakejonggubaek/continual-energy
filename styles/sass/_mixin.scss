@@ -1,0 +1,17 @@
+@mixin lapTopMQ {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin tabletMQ {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin mobileMQ {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
