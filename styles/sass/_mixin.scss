@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin smallMobileMQ {
+  @media (max-width: 380px) {
+    @content;
+  }
+}

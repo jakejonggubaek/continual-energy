@@ -622,6 +622,10 @@ section {
             h3 {
                 margin-bottom: 0;
                 text-align: center;
+
+                @include smallMobileMQ {
+                    font-size: 1.5rem;
+                }
             }
 
             p {
@@ -807,6 +811,10 @@ section {
 .company {
     height: calc(100vh + 150px);
     background-color: white;
+
+    @include smallMobileMQ {
+        height: calc(100vh + 350px);;
+    }
 
     .profile {
         height: 70%;
@@ -1006,6 +1014,10 @@ section {
 
     @include mobileMQ {
         height: 130vh;
+    }
+
+    @include smallMobileMQ {
+       height: 150vh;
     }
 
     p {

@@ -1041,6 +1041,12 @@ section {
   text-align: center;
 }
 
+@media (max-width: 380px) {
+  .services .service-contents .service-container h3 {
+    font-size: 1.5rem;
+  }
+}
+
 .services .service-contents .service-container p {
   margin-top: 5px;
   font-size: 1.5rem;
@@ -1270,6 +1276,12 @@ section {
 .company {
   height: calc(100vh + 150px);
   background-color: white;
+}
+
+@media (max-width: 380px) {
+  .company {
+    height: calc(100vh + 350px);
+  }
 }
 
 .company .profile {
@@ -1531,6 +1543,12 @@ section {
 @media (max-width: 765px) {
   .info {
     height: 130vh;
+  }
+}
+
+@media (max-width: 380px) {
+  .info {
+    height: 150vh;
   }
 }
 
