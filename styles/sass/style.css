@@ -1041,7 +1041,7 @@ section {
   text-align: center;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 370px) {
   .services .service-contents .service-container h3 {
     font-size: 1.5rem;
   }
@@ -1278,7 +1278,7 @@ section {
   background-color: white;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 370px) {
   .company {
     height: calc(100vh + 350px);
   }
@@ -1546,7 +1546,7 @@ section {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 370px) {
   .info {
     height: 150vh;
   }
