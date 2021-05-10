@@ -506,8 +506,12 @@ section {
                 top: 0;
                 padding: 10px;
                 background-color: #f9f9f9;
-                overflow-y: scroll;
+                overflow-y: hidden;
                 z-index: -1;
+
+                @include tabletMQ {
+                    overflow-y: scroll;
+                }
 
                 h3 {
                     margin: 0;
